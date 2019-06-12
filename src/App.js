@@ -23,10 +23,19 @@ function Header(props) {
     sessionStorage.clear();
   }
   return (
-      <div class="d-flex bd-highlight mb-3">
-        <div class="p-2 bd-highlight p-3"><Link to="/">Home</Link></div>
-        <div class="p-2 bd-highlight p-3"><Link to="/cart">Cart</Link></div>
-        <div class="ml-auto p-2 bd-highlight p-3"><Link to="/" onClick={()=>clearCart() } >Clear Cart</Link></div>
+      <div class="d-flex bd-highlight mb-3 container">
+        <div class="p-2 bd-highlight p-3"><Link to="/">
+          Home
+          <i class="fa fa-th-list pl-3" aria-hidden="true"></i>
+        </Link></div>
+        <div class="p-2 bd-highlight p-3"><Link to="/cart">
+          Cart
+          <i class="fa fa-shopping-cart pl-3" aria-hidden="true"></i>
+        </Link></div>
+        <div class="ml-auto p-2 bd-highlight p-3"><Link to="/" onClick={()=>clearCart() } >
+          Clear Cart
+          <i class="fa fa-trash pl-3" aria-hidden="true"></i>
+        </Link></div>
       </div>
   );
 }
