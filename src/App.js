@@ -8,15 +8,12 @@ function App() {
     <Router>
       <div>
         <Header/>
-
         <Route exact path="/" component={Home} />
         <Route path="/cart" component={Cart} />
       </div>
     </Router>
   );
 }
-
-
 
 function Header(props) {
   const clearCart = () => {
