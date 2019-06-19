@@ -25,10 +25,21 @@ code {
 
 }
 @media (max-width: 576px) { 
-.customMobile {
+  .customMobile {
 
-  max-width: 90% !important;
-  margin: auto;
+    max-width: 90% !important;
+    margin: auto;
+  }
 }
+ 
+ 
+ 
+.positionCenter {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
  }
 
